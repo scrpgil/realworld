@@ -10,6 +10,7 @@
 
 require 'faker'
 
+Tag.delete_all
 %w[
   programming
   javascript

@@ -1,0 +1,116 @@
+@import '~tailwindcss/base';
+@import '~tailwindcss/components';
+@import '~tailwindcss/utilities';
+
+html {
+  @apply box-border relative min-h-screen pb-[100px];
+}
+
+.user-nav-toggle::after {
+  @apply inline-block w-0 h-0 align-middle content-[""] mx-1 border-t-[0.3em] border-x-[0.3em] border-gray-600 border-x-transparent border-solid;
+}
+
+.brand-logo {
+  font-family: titillium web, sans-serif;
+}
+
+.nav-pills-link {
+  @apply text-[#aaa] rounded-none border-b-2 border-b-transparent border-[none] border-solid block px-[1em] py-[0.5em];
+  @apply text-[#aaa] rounded-none border-b-2 border-b-transparent border-[none] border-solid;
+  background: 0 0;
+}
+
+.nav-pills-link_active {
+  @apply text-[#5cb85c] border-b-2 border-b-[#5cb85c] border-solid;
+  background: #fff !important;
+  border-bottom: 2px solid #5cb85c !important;
+  color: #5cb85c !important;
+  background: #fff !important;
+}
+
+.nav-pills-link_disable {
+  @apply text-[#818a91] cursor-not-allowed bg-transparent;
+}
+
+.tw-btn {
+  @apply inline-block font-normal leading-tight text-center whitespace-nowrap align-middle select-none border text-base rounded px-4 py-2 border-solid border-transparent;
+}
+.tw-btn-primary {
+  @apply text-white bg-[#5cb85c] border-[#5cb85c];
+}
+
+.tw-btn-secondary {
+  @apply text-white bg-[#6c757d] border-[#6c757d];
+}
+
+.tw-btn-lg {
+  @apply text-xl px-6 py-3 rounded-[0.3rem];
+}
+
+.tw-form-control {
+  @apply block w-full text-base leading-tight text-[#55595c] bg-white bg-none bg-clip-padding border rounded border-solid border-[rgba(0,0,0,0.15)];
+}
+
+.tw-form-control-base {
+  @apply text-base px-3 py-2 rounded-[0.3rem];
+}
+
+.tw-form-control-lg {
+  @apply text-xl px-6 py-3 rounded-[0.3rem];
+}
+
+.tw-form-control-card {
+  @apply text-base px-4 py-4 rounded-[0.3rem] border-none;
+}
+
+.tw-article-content {
+  @apply text-[1.2rem] leading-[1.8rem] mb-8;
+  font-family: 'source serif pro', serif;
+}
+
+.tw-card-footer {
+  @apply border-t-neutral-200 shadow-none text-[0.8rem] font-light border-t border-solid last:rounded-[0_0_0.25rem_0.25rem] bg-neutral-100 px-5 py-3;
+}
+.tw-comment-author {
+  @apply inline-block align-middle;
+}
+.tw-date-posted {
+  @apply inline-block align-middle text-[#bbb] ml-[5px];
+}
+.tw-mod-options {
+  @apply float-right text-[#333] text-base;
+}
+
+.tw-comment-author-img {
+  @apply inline-block align-middle h-5 w-5 rounded-[30px];
+}
+
+.tw-card-text:last-child {
+  @apply mb-0;
+}
+.tw-card-block {
+  @apply p-5;
+}
+.tw-card {
+  @apply border border-neutral-200 shadow-none relative block bg-white rounded mb-3 border-solid;
+}
+
+.tw-btn-sm,
+.tw-btn-group-sm > .tw-btn {
+  @apply text-sm px-2 py-1 rounded-[0.2rem];
+}
+.tw-btn-outline-primary {
+  @apply text-[#5cb85c] bg-none bg-transparent border-[#5cb85c];
+}
+
+.tw-btn-outline-secondary {
+  @apply text-[#ccc] bg-none bg-transparent border-[#ccc];
+}
+.tw-nav-pills.tw-outline-active .tw-nav-link.active {
+  @apply text-[#5cb85c] border-b-2 border-b-[#5cb85c] border-solid;
+  background: #fff !important;
+}
+.tw-nav-pills.tw-outline-active .tw-nav-link {
+  @apply text-[#aaa] rounded-none border-b-2 border-b-transparent border-[none] border-solid;
+  background: 0 0;
+}

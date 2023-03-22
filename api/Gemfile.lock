@@ -78,14 +78,14 @@ GEM
     backport (1.2.0)
     bcrypt (3.1.18)
     benchmark (0.2.0)
-    bootsnap (1.13.0)
+    bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
     byebug (11.1.3)
     choice (0.2.0)
-    concurrent-ruby (1.1.10)
+    concurrent-ruby (1.2.2)
     crass (1.0.6)
-    database_cleaner-active_record (2.0.1)
+    database_cleaner-active_record (2.1.0)
       activerecord (>= 5.a)
       database_cleaner-core (~> 2.0.0)
     database_cleaner-core (2.0.1)
@@ -103,14 +103,14 @@ GEM
     factory_bot_rails (6.2.0)
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
-    faker (2.23.0)
+    faker (3.1.1)
       i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
-    friendly_id (5.4.2)
+    friendly_id (5.5.0)
       activerecord (>= 4.0.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
-    graphql (2.0.14)
+    graphql (2.0.17)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     jaro_winkler (1.5.4)
@@ -120,7 +120,7 @@ GEM
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
-    listen (3.7.1)
+    listen (3.8.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.19.0)
@@ -132,15 +132,16 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
-    minitest (5.16.3)
+    minitest (5.17.0)
     msgpack (1.6.0)
+    mysql2 (0.5.5)
     net-imap (0.3.1)
       net-protocol
     net-pop (0.1.2)
       net-protocol
-    net-protocol (0.1.3)
+    net-protocol (0.2.1)
       timeout
-    net-smtp (0.3.2)
+    net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.8)
     nokogiri (1.13.8)
@@ -150,8 +151,7 @@ GEM
     parallel (1.22.1)
     parser (3.1.2.1)
       ast (~> 2.4.1)
-    pg (1.4.3)
-    puma (5.6.5)
+    puma (6.1.0)
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.4)
@@ -183,6 +183,9 @@ GEM
       ruby-graphviz (~> 1.2)
     rails-html-sanitizer (1.4.3)
       loofah (~> 2.3)
+    rails_same_site_cookie (0.1.9)
+      rack (>= 1.5)
+      user_agent_parser (~> 2.6)
     railties (7.0.4)
       actionpack (= 7.0.4)
       activesupport (= 7.0.4)
@@ -252,16 +255,17 @@ GEM
       thor (~> 1.0)
       tilt (~> 2.0)
       yard (~> 0.9, >= 0.9.24)
-    spring (4.1.0)
+    spring (4.1.1)
     spring-watcher-listen (2.1.0)
       listen (>= 2.7, < 4.0)
       spring (>= 4)
     thor (1.2.1)
     tilt (2.0.11)
-    timeout (0.3.0)
-    tzinfo (2.0.5)
+    timeout (0.3.2)
+    tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.3.0)
+    user_agent_parser (2.14.0)
     warden (1.2.9)
       rack (>= 2.0.9)
     webrick (1.7.0)
@@ -289,12 +293,13 @@ DEPENDENCIES
   graphql
   jwt
   listen
+  mysql2
   net-smtp
-  pg
   puma
   rack-cors
   rails
   rails-erd
+  rails_same_site_cookie
   rspec-rails
   rubocop
   shoulda-matchers
@@ -304,7 +309,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 3.1.1p18
+   ruby 3.1.3p185
 
 BUNDLED WITH
    2.3.16
